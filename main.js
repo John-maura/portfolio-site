@@ -4,8 +4,17 @@ $(document).ready(function(){
             $('.navbar').addClass("sticky");
         }else{
             $('.navbar').removeClass("sticky");
+        }/*
+        if(this.scroll>500){
+            $('.scroll-up-btn').addClass("show");
+        }else{
+            $('.scroll-up-btn').removeClass("show");
         }
     });
+// slide-up script
+$('.scroll-up-btn').click(()=>{
+    $('html').animate({scrollTop: 0});
+});*/
     //toggle menu/navbar script
     $('.menu-btn').click(function(){
         $('.navbar .menu').toggleClass("active");
