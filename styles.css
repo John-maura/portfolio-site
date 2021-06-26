@@ -47,6 +47,7 @@ html {
   display: inline-block;
 }
 .navbar .menu li a {
+  display: block;
   color: #fff;
   font-size: 18px;
   font-weight: 500;
@@ -548,6 +549,9 @@ footer span a:hover {
   .max-width {
     padding: 0 50px;
   }
+  .menu-btn.menu-btn.show-hide {
+    display: block;
+  }
 }
 
 @media (max-width: 947px) {
@@ -558,7 +562,6 @@ footer span a:hover {
     display: block;
     z-index: 999;
   }
-
   .menu-btn i.active:before {
     content: "/f00d";
   }

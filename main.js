@@ -20,7 +20,21 @@ $('.scroll-up-btn').click(()=>{
         $('.navbar .menu').toggleClass("active");
         $('.menu-btn i').toggleClass("active"); 
     });
+// typing animation script
+var typed = new Typed(".typing", {
+    strings:["Developer", "Freelancer", "Tech blogger", "Applied Mathematician"],
+    typeSpeed: 100,
+    backSpeed: 60,
+    loop: true
+});
 
+var typed = new Typed(".typing2", {
+    strings:["Developer", "Freelancer", "Tech blogger", "Applied Mathematician"],
+    typeSpeed: 100,
+    backSpeed: 60,
+    loop: true
+});
+    
     // owl carousel script
     $('.carousel').owlCarousel({
         margin: 20,
