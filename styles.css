@@ -7,6 +7,7 @@
 html {
   scroll-behavior: smooth;
 }
+
 .max-width {
   max-width: 1300px;
   padding: 0 80px;
@@ -18,7 +19,7 @@ html {
   width: 100%;
   z-index: 999;
   padding: 30px 0;
-  font-family: sans-serif;
+  font-family: "Roboto", sans-serif;
   transition: all 0.3s ease;
 }
 .navbar.sticky {
@@ -101,7 +102,7 @@ html {
   height: 100vh;
   color: #fff;
   min-height: 500px;
-  font-family: sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 .home .max-width {
   margin: auto 0 auto 40px;
@@ -151,7 +152,7 @@ section {
 .teams,
 .contact,
 footer {
-  font-family: sans-serif;
+  font-family: "Robot", sans-serif;
 }
 .about .about-content,
 .services .serv-content,
@@ -169,7 +170,7 @@ section .title {
   font-weight: 500;
   margin-bottom: 60px;
   padding-bottom: 20px;
-  font-family: sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 section .title::before {
   content: "";
@@ -198,7 +199,7 @@ section .title::after {
 
 section .about .title {
   position: relative;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Roboto", sans-serif;
   text-align: center;
   font-size: 40px;
   font-weight: 500;
@@ -365,6 +366,12 @@ section .about .title {
 .skills .skills-content .right .graphql::before {
   width: 50%;
 }
+.skills .skills-content .right .bootstrap::before {
+  width: 80%;
+}
+.skills .skills-content .right .php::before {
+  width: 70%;
+}
 
 /*teams section styling*/
 .teams .title::after {
@@ -463,6 +470,9 @@ teams .carousel .card:hover .box {
 .contact .contact-content .info .sub-title {
   color: #333;
 }
+.contact .contact-content .info .sub-title a {
+  color: rgb(175, 66, 88);
+}
 .contact .right form .fields {
   display: flex;
 }
@@ -519,6 +529,12 @@ teams .carousel .card:hover .box {
 }
 
 /*footer section stylng*/
+.linebreak {
+  height: 2px;
+  width: 100%;
+  background: crimson;
+  position: relative;
+}
 footer {
   background: #111;
   padding: 20px 23px;
@@ -531,6 +547,25 @@ footer span a {
 }
 footer span a:hover {
   text-decoration: underline;
+}
+.links {
+  text-align: left;
+  margin-left: 40px;
+}
+.linkheader {
+  text-align: left;
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.linkList {
+  list-style: none;
+}
+.links .listItem img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
 /*responsive media query start*/
